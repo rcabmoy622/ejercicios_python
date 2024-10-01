@@ -1,5 +1,0 @@
-print("- - - Vamos ha hacer cálculos sobre un rectángulo - - -")
-b = int(input("Escribe la base (cm): "))
-h = int(input("Escribe la altura (cm): "))
-print("El perímetro del rectángulo es: ",2*(b+h)," cm")
-print("El área del rectángulo es: ",b*h," cm")
