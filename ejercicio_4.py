@@ -1,0 +1,7 @@
+print("Vamos a mostrar la suma, resta, división y multiplicación de dos números:")
+n1 = int(input("Escribe el primer número: "))
+n2 = int(input("Escribe el segundo número: "))
+print("La suma de ambos es: ",n1+n2)
+print("La resta de ambos es: ",n1-n2)
+print("La división de ambos es: ",n1/n2)
+print("La multiplicación de ambos es: ",n1*n2)
