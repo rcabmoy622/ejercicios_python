@@ -1,0 +1,7 @@
+print("- - - Calcula tu calificación final en la materia de Algoritmos - - -")
+p1 = int(input("Escribe la calificación del primer parcial: "))
+p2 = int(input("Escribe la calificación del segundo parcial: "))
+p3 = int(input("Escribe la calificación del tercer parcial: "))
+ef = int(input("Escribe la calificación del examen final: "))
+tf = int(input("Escribe la calificación del trabajo final: "))
+print("Tu calificación final es: ",(((p1+p2+p3)/3)*0.55)+(ef*0.3)+(tf*0.15))
