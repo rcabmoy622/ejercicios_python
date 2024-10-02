@@ -1,0 +1,7 @@
+print("- - - Calculadora de ganancias por comisiones (al 10% con tres ventas) y sueldo total - - -")
+s = int(input("Escribe el sueldo base: "))
+v1 = int(input("Escribe el valor de la venta 1: "))
+v2 = int(input("Escribe el valor de la venta 2: "))
+v3 = int(input("Escribe el valor de la venta 3: "))
+print("Ganancias por concepto de comisiones: ",(v1*0.1)+(v2*0.1)+(v3*0.1))
+print("Sueldo total: ",s+(v1*0.1)+(v2*0.1)+(v3*0.1))
