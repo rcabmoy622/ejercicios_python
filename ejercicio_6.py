@@ -1,5 +1,0 @@
-print("Vamos a calcular la media de tres números:")
-n1 = int(input("Escribe el primer número: "))
-n2 = int(input("Escribe el segundo número: "))
-n3 = int(input("Escribe el tercer número: "))
-print("La media de los tres númereos es: ",(n1+n2+n3)/3)
