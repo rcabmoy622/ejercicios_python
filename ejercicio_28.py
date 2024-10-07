@@ -1,33 +1,31 @@
 print("- - - Introduce un intervalo... Luego introducirás números y te mostraré información variada - - -")
 
-li = int(input("Introduce el límite inferior del intervalo: "))
-ls = int(input("Introduce el límite superior del intervalo: "))
-num = ""
-list_num = []
-suma = 0
-fuera = 0
-num_igual = []
+limite_inferior = int(input("Introduce el límite inferior del intervalo: "))
+limite_superior = int(input("Introduce el límite superior del intervalo: "))
+numero_introducido = ""
+lista_numeros_introducidos = []
+suma_valores_del_rango = 0
+cantidad_numeros_fuera = 0
+numeros_igual_al_limite = []
 
-while li > ls:
+while limite_inferior > limite_superior:
     print("El límite inferior no puede ser mayor al límite superior. Vuelve a introducirlos:")
-    li = int(input("Introduce el límite inferior del intervalo: "))
-    ls = int(input("Introduce el límite superior del intervalo: "))
+    limite_inferior = int(input("Introduce el límite inferior del intervalo: "))
+    limite_superior = int(input("Introduce el límite superior del intervalo: "))
 
-intervalo = range(li,ls)
+while numero_introducido != 0:
+    numero_introducido = int(input("Ahora introduce números ('0' para salir): "))
+    lista_numeros_introducidos.append(numero_introducido)
 
-while num != 0:
-    num = int(input("Ahora introduce números ('0' para salir): "))
-    list_num.append(num)
-
-for n in list_num:
-    if li < n < ls:
-        suma += n
+for numero_evaluado in lista_numeros_introducidos:
+    if limite_inferior < numero_evaluado < limite_superior:
+        suma_valores_del_rango += numero_evaluado
     else:
-        fuera += 1
-    
-    if n == li or n == ls:
-        num_igual.append(n)
+        cantidad_numeros_fuera += 1
+
+    if (numero_evaluado == limite_inferior) or (numero_evaluado == limite_superior):
+        numeros_igual_al_limite.append(numero_evaluado)
         
-print(f"Suma de los números dentro del intervalo: {suma}")
-print(f"Números fuera del intervalo: {fuera}")
-print(f"Números iguales a los límites del intervalo: {num_igual}")
+print(f"Suma de los números dentro del intervalo: {suma_valores_del_rango}")
+print(f"Números fuera del intervalo: {cantidad_numeros_fuera}")
+print(f"Números iguales a los límites del intervalo: {numeros_igual_al_limite}")
